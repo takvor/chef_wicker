@@ -1,9 +1,10 @@
-Generated at Fri Dec 02 14:31:15 -0500 2011
-Chef::Exceptions::FileNotFound: template[/etc/apt/sources.list.d/compulab.list] (redpost::default line 5) had an error: cookbook redpost does not contain file templates/compulab.list.erb
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:633:in `preferred_manifest_record'
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:638:in `preferred_filename_on_disk_location'
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:68:in `template_location'
-/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:39:in `action_create'
+Generated at Fri Dec 02 15:59:56 -0500 2011
+Chef::Exceptions::Exec: package[mplayer skins] (redpost::default line 37) had an error: apt-get -q -y --force-yes install mplayer skins=2:1.0~rc3+svn20090426-1ubuntu16.1 returned 100, expected 0
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/command.rb:185:in `handle_command_failures'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/command.rb:132:in `run_command'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/mixin/command.rb:200:in `run_command_with_systems_locale'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/package/apt.rb:92:in `install_package'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/package.rb:60:in `action_install'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
 /usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'

@@ -1,35 +1,42 @@
-execute "sudo apt-get update && sudo apt-get upgrade" do
-  action :nothing
+execute "update_upgrade" do
+  command "sudo apt-get update && sudo apt-get -y --force-yes upgrade"
+  action :run
 end
 
 template "/etc/apt/sources.list.d/compulab.list" do
   source "compulab.list.erb"
 end
 
-execute "sudo apt-get update && sudo apt-get install linux-image-2.6.35-34-fitpc2 linux-headers-2.6.35-34-fitpc2 xserver-xorg-video-poulsbo mplayer-vaapi mplayer-skins && sudo apt-get purge linux-generic linux-image-generic linux-headers-generic linux-image-$(uname -r) linux-headers-$(uname -r) && sudo apt-get autoremove" do
-  action :nothing
+execute "update" do
+  command "sudo apt-get update"
+  action :run
 end
 
 package "linux-image-2.6.35-34-fitpc2" do
   action :install
+  options "--force-yes"
 end
 
 package "linux-headers-2.6.35-34-fitpc2" do
   action :install
+  options "--force-yes"
 end
 
 
 package "xserver-xorg-video-poulsbo" do
   action :install
+  options "--force-yes"
 end
 
 
 package "mplayer-vaapi" do
   action :install
+  options "--force-yes"
 end
 
-package "mplayer skins" do
+package "mplayer-skins" do
   action :install
+  options "--force-yes"
 end
 
 package "linux-generic" do
