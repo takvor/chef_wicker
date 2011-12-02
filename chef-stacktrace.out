@@ -1,0 +1,29 @@
+Generated at Fri Dec 02 14:31:15 -0500 2011
+Chef::Exceptions::FileNotFound: template[/etc/apt/sources.list.d/compulab.list] (redpost::default line 5) had an error: cookbook redpost does not contain file templates/compulab.list.erb
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:633:in `preferred_manifest_record'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/cookbook_version.rb:638:in `preferred_filename_on_disk_location'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:68:in `template_location'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/provider/template.rb:39:in `action_create'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `send'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource.rb:437:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:45:in `run_action'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `each'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:81:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:94
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:116:in `call_iterator_block'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:85:in `step'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:104:in `iterate'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection/stepable_iterator.rb:55:in `each_with_index'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/resource_collection.rb:92:in `execute_each_resource'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/runner.rb:76:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:312:in `converge'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/client.rb:160:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:192:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:183:in `loop'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application/solo.rb:183:in `run_application'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/../lib/chef/application.rb:67:in `run'
+/usr/lib/ruby/gems/1.8/gems/chef-0.10.4/bin/chef-solo:25
+/usr/bin/chef-solo:19:in `load'
+/usr/bin/chef-solo:19
