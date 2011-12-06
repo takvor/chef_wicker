@@ -63,7 +63,7 @@ execute "sudo apt-get autoremove" do
   action :nothing
 end
 
-#install xfce and poulsbo video driver
+#install xfce desktop
 package "xfce4" do
   action :install
 end
